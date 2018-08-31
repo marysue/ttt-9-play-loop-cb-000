@@ -5,11 +5,9 @@ require_relative "../lib/play"
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 puts "Welcome to Tic Tac Toe!"
-turn = 1
-while turn <= 9
-  play(board)
-  turn +=1
-end
+
+play(board)
+
 
 
 # Make sure to execute #play below
