@@ -43,16 +43,9 @@ def get_new_token(token)
   end
 end
 def play(board)
-  turn = 1
-  token = 'X'
-  while turn <= 9
-    display_board
-    input = get_input(token)
-    index = input_to_index(input) #just subtracts 1 from any value
-    if (valid_move?(board, index))
-      move(board, index, token)
-      token = get_new_token(token)
-      turn += 1
-    end
+  index = input_to_index(input) #just subtracts 1 from any value
+  if (valid_move?(board, index))
+    move(board, index, token)
+    #token = get_new_token(token)
   end
 end
