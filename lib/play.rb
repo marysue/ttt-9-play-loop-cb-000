@@ -49,7 +49,6 @@ def turn (board)
   index = input_to_index(input) #just subtracts 1 from any value
   if (valid_move?(board, index))
     move(board, index, token)
-    iter += 1
     #token = get_new_token(token)
   end
 end
