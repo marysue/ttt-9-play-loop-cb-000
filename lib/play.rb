@@ -56,6 +56,7 @@ def play(board)
   iter = 1
   while iter <= 9
     turn(board)
+    display_board(board)
     iter += 1
   end
 end
